@@ -236,7 +236,7 @@
     .hero h1 strong {
       display: block;
       color: var(--blue);
-      font-size: 1.12em;
+      font-size: inherit;
     }
 
     .lead {
@@ -928,13 +928,16 @@
       }
 
       .hero h1 {
-        font-size: clamp(34px, 10vw, 42px);
+        font-size: clamp(32px, 8.8vw, 38px);
         line-height: 1.15;
       }
 
-      .hero-title-line,
-      .hero-copy-line {
-        white-space: normal;
+      .hero-title-line {
+        white-space: nowrap;
+      }
+
+      .hero h1 strong {
+        white-space: nowrap;
       }
 
       .lead {
@@ -944,9 +947,13 @@
 
       .hero-copy {
         max-width: 100%;
-        font-size: 15px;
+        font-size: clamp(14px, 3.7vw, 16px);
         line-height: 1.75;
         overflow-wrap: break-word;
+      }
+
+      .hero-copy-line {
+        white-space: nowrap;
       }
 
       .plane {
@@ -1085,9 +1092,9 @@
         <div class="container hero-grid">
           <div>
             <p class="eyebrow"><span class="plane">✈</span>留学前の英語準備に</p>
-            <h1 id="hero-title"><span class="hero-title-line">フィリピン留学の効果を</span><strong>出発前から最大化。</strong></h1>
+            <h1 id="hero-title"><span class="hero-title-line">フィリピン留学の</span><span class="hero-title-line">効果を</span><strong>出発前から最大化。</strong></h1>
             <p class="lead">試験にも留学にも実務にも<br>すべてに通用する“揺るぎない英語力”を。</p>
-            <p class="hero-copy"><span class="hero-copy-line">MyTutorは、フィリピン人講師と学べる質重視のマンツーマンオンライン英会話。</span><span class="hero-copy-line">渡航前に先取りして、留学スタートダッシュを決めましょう。</span></p>
+            <p class="hero-copy"><span class="hero-copy-line">MyTutorは、フィリピン人講師と学べる質重視の</span><span class="hero-copy-line">マンツーマンオンライン英会話。</span><span class="hero-copy-line">渡航前に先取りして</span><span class="hero-copy-line">留学スタートダッシュを決めましょう。</span></p>
             <a class="button" href="https://mypage.mytutor-jpn.com/signup?code=eyJpdiI6IlNRd1paU0lzVklYZlJnRjN5V2xlK3c9PSIsInZhbHVlIjoiVTlFQ0E1QTNvVXhoNzczL3ZTN0ppckYzaEp4R05QSzF2RTQ2S01BaGcraz0iLCJtYWMiOiIzYmI5ZDAwNmU1NDczNGE4NzU1MWI5YzdhYjBhMDI2NDI4ZGNiZWU2OTMzMmEyMjFkODAyMTkxNTAwYWY3NjhjIn0">まずは無料会員登録</a>
             <ul class="check-list">
               <li>渡航前の準備に最適</li>
