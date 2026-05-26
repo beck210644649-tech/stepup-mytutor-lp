@@ -31,6 +31,7 @@
       --hero-mobile-photo: url("assets/hero-mobile.jpg");
       --beach-photo: url("assets/beach-cta-v1.0.jpg");
       --footer-beach-photo: url("assets/beach-cta-vf.jpg");
+      --footer-beach-mobile-photo: url("assets/beach-cta-v1.0.jpg");
       --lesson-photo: url("assets/lesson-photo.jpg");
       --flow-lesson-photo: url("assets/Lesson-photo-veee.jpg");
       --register-photo: url("assets/muryoutaikentouroku.jpg");
@@ -772,6 +773,10 @@
       overflow: hidden;
     }
 
+    .cta-mobile-content {
+      display: none;
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -1017,8 +1022,82 @@
       }
 
       .cta-panel {
-        min-height: 0;
-        height: auto;
+        position: relative;
+        aspect-ratio: auto;
+        min-height: 520px;
+        padding: 24px 20px 22px;
+        border-radius: 14px;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.82) 48%, rgba(255,255,255,.08) 100%),
+          var(--footer-beach-mobile-photo) center bottom / cover no-repeat;
+        box-shadow: 0 16px 36px rgba(0, 84, 156, .18);
+      }
+
+      .cta-mobile-content {
+        display: flex;
+        min-height: 470px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .cta-mobile-copy {
+        display: block;
+        color: var(--blue-deep);
+      }
+
+      .cta-mobile-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: #ffe08a;
+        color: #0054b5;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .cta-mobile-title {
+        display: block;
+        margin: 0;
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.18;
+        font-weight: 900;
+      }
+
+      .cta-mobile-title span {
+        display: block;
+      }
+
+      .cta-mobile-text {
+        display: block;
+        margin: 14px 0 0;
+        font-size: 15px;
+        line-height: 1.65;
+        font-weight: 900;
+      }
+
+      .cta-mobile-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 56px;
+        border-radius: 999px;
+        background: #f65336;
+        color: #fff;
+        box-shadow: 0 8px 0 rgba(172, 49, 30, .28), 0 16px 22px rgba(198, 56, 34, .22);
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      .cta-mobile-button::after {
+        content: ">";
+        margin-left: 12px;
+        font-size: 22px;
+        line-height: 1;
       }
 
       .faq-list {
@@ -1229,6 +1308,18 @@
         <div class="container">
           <a class="cta-panel" href="https://mypage.mytutor-jpn.com/signup?code=eyJpdiI6IlNRd1paU0lzVklYZlJnRjN5V2xlK3c9PSIsInZhbHVlIjoiVTlFQ0E1QTNvVXhoNzczL3ZTN0ppckYzaEp4R05QSzF2RTQ2S01BaGcraz0iLCJtYWMiOiIzYmI5ZDAwNmU1NDczNGE4NzU1MWI5YzdhYjBhMDI2NDI4ZGNiZWU2OTMzMmEyMjFkODAyMTkxNTAwYWY3NjhjIn0" aria-label="今すぐ無料会員登録">
             <span class="sr-only" id="entry-title">留学前の一歩が、留学中の伸びを変える。今すぐ無料会員登録</span>
+            <span class="cta-mobile-content" aria-hidden="true">
+              <span class="cta-mobile-copy">
+                <span class="cta-mobile-kicker">Step Up留学 提供特典つき</span>
+                <span class="cta-mobile-title">
+                  <span>留学前の一歩が、</span>
+                  <span>留学中の伸びを</span>
+                  <span>変える。</span>
+                </span>
+                <span class="cta-mobile-text">まずは無料会員登録から、あなたに合った学習準備を始めましょう。</span>
+              </span>
+              <span class="cta-mobile-button">今すぐ無料会員登録</span>
+            </span>
           </a>
         </div>
       </section>
