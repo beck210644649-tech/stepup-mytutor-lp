@@ -31,7 +31,7 @@
       --hero-mobile-photo: url("assets/hero-mobile.jpg");
       --beach-photo: url("assets/beach-cta-v1.0.jpg");
       --footer-beach-photo: url("assets/beach-cta-vf.jpg");
-      --footer-beach-mobile-photo: url("assets/beach-cta-v1.0.jpg");
+      --footer-cta-mobile-photo: url("assets/footer-cta-mobile.jpg");
       --lesson-photo: url("assets/lesson-photo.jpg");
       --flow-lesson-photo: url("assets/Lesson-photo-veee.jpg");
       --register-photo: url("assets/muryoutaikentouroku.jpg");
@@ -773,10 +773,6 @@
       overflow: hidden;
     }
 
-    .cta-mobile-content {
-      display: none;
-    }
-
     .sr-only {
       position: absolute;
       width: 1px;
@@ -1023,108 +1019,13 @@
 
       .cta-panel {
         position: relative;
-        aspect-ratio: auto;
+        aspect-ratio: 1 / 1;
         min-height: 0;
-        padding: 28px 20px 24px;
-        border: 4px solid #46a365;
+        padding: 0;
+        border: 0;
         border-radius: 18px;
-        background:
-          radial-gradient(circle at 0 0, rgba(63, 176, 101, .14), transparent 36%),
-          radial-gradient(circle at 100% 100%, rgba(255, 102, 96, .12), transparent 34%),
-          linear-gradient(180deg, #fbfffc 0%, #f7fff8 100%);
-        box-shadow: 0 16px 36px rgba(35, 125, 74, .14);
-      }
-
-      .cta-mobile-content {
-        position: relative;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: 68px minmax(0, 1fr);
-        align-items: start;
-        gap: 14px;
-      }
-
-      .cta-mobile-copy {
-        display: block;
-        min-width: 0;
-        color: #193a34;
-      }
-
-      .cta-mobile-badge {
-        width: 62px;
-        height: 62px;
-        margin-top: 4px;
-        object-fit: contain;
-        filter: drop-shadow(0 8px 12px rgba(36, 132, 75, .22));
-      }
-
-      .cta-mobile-kicker {
-        display: none;
-      }
-
-      .cta-mobile-title {
-        display: block;
-        margin: 0 0 14px;
-        color: #46a365;
-        font-size: clamp(27px, 7.4vw, 34px);
-        line-height: 1.22;
-        font-weight: 900;
-      }
-
-      .cta-mobile-title span {
-        display: inline;
-      }
-
-      .cta-mobile-text,
-      .cta-mobile-note {
-        display: block;
-        margin: 0;
-        font-size: clamp(18px, 4.7vw, 22px);
-        line-height: 1.85;
-        font-weight: 900;
-      }
-
-      .cta-mobile-note {
-        margin-top: 20px;
-      }
-
-      .cta-mobile-alert {
-        color: #df3e25;
-        font-size: 1.18em;
-      }
-
-      .cta-mobile-action {
-        display: block;
-        grid-column: 1 / -1;
-        padding: 6px 18px 0 86px;
-      }
-
-      .cta-mobile-deco {
-        position: absolute;
-        right: -42px;
-        bottom: -48px;
-        width: 150px;
-        height: auto;
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      .cta-mobile-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        min-height: 64px;
-        border-radius: 999px;
-        background: linear-gradient(180deg, #f47b7a 0%, #ed5754 100%);
-        color: #fff;
-        box-shadow: 0 9px 0 rgba(185, 61, 56, .24), 0 16px 22px rgba(198, 56, 34, .18);
-        font-size: clamp(20px, 5.4vw, 25px);
-        font-weight: 900;
-      }
-
-      .cta-mobile-button::after {
-        content: none;
+        background: var(--footer-cta-mobile-photo) center center / cover no-repeat;
+        box-shadow: 0 16px 36px rgba(0, 84, 156, .18);
       }
 
       .faq-list {
@@ -1335,21 +1236,6 @@
         <div class="container">
           <a class="cta-panel" href="https://mypage.mytutor-jpn.com/signup?code=eyJpdiI6IlNRd1paU0lzVklYZlJnRjN5V2xlK3c9PSIsInZhbHVlIjoiVTlFQ0E1QTNvVXhoNzczL3ZTN0ppckYzaEp4R05QSzF2RTQ2S01BaGcraz0iLCJtYWMiOiIzYmI5ZDAwNmU1NDczNGE4NzU1MWI5YzdhYjBhMDI2NDI4ZGNiZWU2OTMzMmEyMjFkODAyMTkxNTAwYWY3NjhjIn0" aria-label="今すぐ無料会員登録">
             <span class="sr-only" id="entry-title">留学前の一歩が、留学中の伸びを変える。今すぐ無料会員登録</span>
-            <span class="cta-mobile-content" aria-hidden="true">
-              <img class="cta-mobile-badge" src="assets/badge-partner-benefit-transparent-sm.png" alt="">
-              <span class="cta-mobile-copy">
-                <span class="cta-mobile-kicker">提携特典</span>
-                <span class="cta-mobile-title">
-                  <span>無料体験・</span><span>提携特典</span>
-                </span>
-                <span class="cta-mobile-text">Step Up留学の提携案内から無料会員登録で無料レッスン2回。さらに、プラン購入で無料レッスン2回分の追加2ポイントを追加プレゼント <span class="cta-mobile-alert">!!</span></span>
-                <span class="cta-mobile-note">下のボタンから登録ページへ進めます。</span>
-              </span>
-              <span class="cta-mobile-action">
-                <span class="cta-mobile-button">特典を受け取る</span>
-              </span>
-              <img class="cta-mobile-deco" src="assets/deco-monstera-plumeria-sm.png" alt="">
-            </span>
           </a>
         </div>
       </section>
